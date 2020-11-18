@@ -14,3 +14,7 @@
 ### Caeser Cipher Breaker class
 
 ![GitHub Logo](/img/CaeserBreakerClass.png)
+
+### Vigenere Cipher class
+
+![GitHub Logo](/img/VigenereCipherClass.png)

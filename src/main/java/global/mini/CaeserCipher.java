@@ -20,7 +20,11 @@ public class CaeserCipher {
     }
 
     public String decryptLetter(char singleLetter){
-        return getFirstAlphaString(singleLetter);
+        if(Character.isUpperCase(singleLetter)){
+            return getFirstAlphaString(singleLetter);
+        }else{
+            return getFirstAlphaString(Character.toUpperCase(singleLetter)).toLowerCase();
+        }
     }
 
     private String getCipherString(char singleSting) {
