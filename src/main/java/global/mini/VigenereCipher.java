@@ -70,15 +70,4 @@ public class VigenereCipher {
     public ArrayList<Integer> getKeys() {
         return keys;
     }
-
-    public String sliceString(String message, int whichSlice,int totalSlice){
-        StringBuilder sb= new StringBuilder();
-        for(int i =whichSlice; i<message.length();i+=totalSlice){
-            System.out.println("here ====>"+message.charAt(i));
-            sb.append(message.charAt(i));
-        }
-        System.out.println("slice====>"+sb.toString());
-
-        return sb.toString();
-    }
 }

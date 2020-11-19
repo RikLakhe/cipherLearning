@@ -11,6 +11,11 @@ public class CaeserBreaker {
         this.commonWordIndex = alphaString.indexOf("E");
     }
 
+    public CaeserBreaker(char commonWord) {
+        this.commonWord = Character.toString(commonWord);
+        this.commonWordIndex = alphaString.indexOf(Character.toString(commonWord).toUpperCase());
+    }
+
     public CaeserBreaker(String commonWord) {
         this.commonWord = commonWord;
         this.commonWordIndex = alphaString.indexOf(commonWord.toUpperCase());
@@ -63,7 +68,6 @@ public class CaeserBreaker {
     }
 
     public Answer decrypt(String inputString) {
-        System.out.println("commonWordIndex"+commonWordIndex);
         int[] freq = countLetters(inputString);
         int maxIndex = findMaxIndex(freq);
         int dKey = maxIndex - (this.commonWordIndex);

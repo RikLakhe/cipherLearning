@@ -13,7 +13,8 @@ public class CaeserCipherTesting {
         String test = testDrive.getFile("titus-small.txt");
         CaeserCipher caeserCipher = new CaeserCipher(5);
         String result = caeserCipher.encrypt(test);
-        assertEquals(result,"Htfq-gqfhp nx gjyyjw ymfs fstymjw mzj,Ns ymfy ny xhtwsx yt gjfw fstymjw mzj;Ktw fqq ymj bfyjw ns ymj thjfsHfs sjajw yzws ymj xbfs'x gqfhp qjlx yt bmnyj,Fqymtzlm xmj qfaj ymjr mtzwqd ns ymj kqtti.");
+        assertEquals(result,"Htfq-gqfhp nx gjyyjw ymfs fstymjw mzj, Ns ymfy ny xhtwsx yt gjfw fstymjw mzj; Ktw fqq " +
+                "ymj bfyjw ns ymj thjfs Hfs sjajw yzws ymj xbfs'x gqfhp qjlx yt bmnyj, Fqymtzlm xmj qfaj ymjr mtzwqd ns ymj kqtti. ");
     }
 
     @Test

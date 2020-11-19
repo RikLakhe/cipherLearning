@@ -18,3 +18,7 @@
 ### Vigenere Cipher class
 
 ![GitHub Logo](/img/VigenereCipherClass.png)
+
+### Vigenere Breaker class
+
+![GitHub Logo](/img/VigenereBreakerClass.png)
